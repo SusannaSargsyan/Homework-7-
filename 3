@@ -1,0 +1,149 @@
+class Person{
+
+	constructor(firstName, lastName, gender, age)
+    {
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.gender=gender;
+        this.age=age;
+    }
+
+	get firstName()
+    {
+		return this.firstName;
+    }
+
+	set firstName(value)
+    {
+		this.firstName=value;
+    }
+
+	get lastName()
+    {
+		return this.lastName;
+    }
+
+	set lastName(value)
+    {
+		this.lastName=value;
+    }
+
+	get gender()
+    {
+		return this.gender;
+    }
+
+	set gender(value)
+    {
+		this.gender=value;
+    }
+
+	get age()
+    {
+		return this.age;
+    }
+
+	set age(value)
+    {
+		this.age=value;
+    }
+
+	toString()
+    {
+		return `firstName:${firstName}, lastName:${lastName}, gender:${gender}, age:${age}`;
+    }
+	
+}
+
+
+class Student extends Person{
+
+	constructor(firstName, lastName, gender, age, program, year, fee)
+    {
+		super(firstName, lastName, gender, age,);
+		this.program=program;
+		this.year=year;
+		this.fee=fee;
+    }
+
+	get program()
+    {
+		return this.program;
+    }
+
+	set program(value)
+    {
+		this.program=value;
+    }
+
+	get year()
+    {
+		return this.year;
+    }
+
+	set year(value)
+    {
+		this.year=value;
+    }
+
+	get fee()
+    {
+		return this.fee;
+    }
+
+	set fee(value)
+    {
+		this.fee=value;
+    }
+
+	passExam(program, grade)
+    {
+
+		year++
+    }
+
+	toString()
+    {
+		return `firstName:${firstName}, lastName:${lastName}, gender:${gender}, age:${age}, program:${program}, year:${year}, fee:${fee}`;
+    }
+	
+}
+
+class Teacher extends Person{
+
+   constructor(firstName, lastName, gender, age, program, pay)
+    {
+		super(firstName, lastName, gender, age,);
+		this.program=program;
+		this.pay=pay;
+		
+    }
+
+	toString()
+    {
+		return `firstName:${firstName}, lastName:${lastName}, gender:${gender}, age:${age}, program:${program}, pay:${pay}`;
+    }
+
+	get program()
+    {
+		return this.program;
+    }
+
+	set program(value)
+    {
+		this.program=value;
+    }
+
+	get pay()
+    {
+		return this.pay;
+    }
+
+	set pay(value)
+    {
+		this.pay=value;
+    }
+
+
+}
+
